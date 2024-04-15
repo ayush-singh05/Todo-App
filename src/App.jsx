@@ -7,11 +7,11 @@ import store from './store/store'
 import Task from './components/Task'
 
 function App() {
-
+  
+  // Wrapping your components with the Provider component from react-redux  
   return (
     <>
-    // Wrapping your components with the Provider component from react-redux  
-     <Provider store={store}>
+    <Provider store={store}>
      <div className=' '>
      <TaskInput/>
      <h3 className='text-2xl font-semibold my-7'>My Todos</h3>
