@@ -3,16 +3,22 @@ import { useDispatch } from 'react-redux'
 import { addTodo } from '../store/todoSlice'
 
 function TaskInput() {
+   // Initialize state for input text
     const [text, setText] = useState('');
+
+    // Initialize dispatch to dispatch actions to the Redux store
     const dispach = useDispatch()
 
+     // Function to handle form submission
     const handleSubmit = (e) => {
-        e.preventDefault()
+        e.preventDefault();
+        // Dispatch addTodo action with the input text
         dispach(addTodo(text));
+         // Clear the input text after submitting
         setText(() => setText(""));
         
     }
-    
+
   return (
     <div >
         <h2 className='text-5xl font-semibold mb-16'>Todo App</h2>

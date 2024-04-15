@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+    // Wrapping your components with the Provider component from react-redux  
      <Provider store={store}>
      <div className=' '>
      <TaskInput/>

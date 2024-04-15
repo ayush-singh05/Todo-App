@@ -3,10 +3,14 @@ import { useDispatch, useSelector } from 'react-redux'
 import { removeTodo,toggleCompleted } from '../store/todoSlice';
 
 function TaskList({ todo  }) {
+
+     // Initialize dispatch to dispatch actions to the Redux store
    const dispatch = useDispatch()
    
-    
+    // Function to toggle the completion status of the todo
     const toggle = () => {
+
+          // Dispatch the toggleCompleted action with the todo id
         dispatch(toggleCompleted(todo.id))
     }
 
