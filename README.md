@@ -29,7 +29,7 @@ Before running the application, make sure you have the following installed:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/ayush-singh05/weather-app.git
+   git clone https://github.com/ayush-singh05/Todo-App.git
 2. Navigate into the project directory:
 
    ```bash
